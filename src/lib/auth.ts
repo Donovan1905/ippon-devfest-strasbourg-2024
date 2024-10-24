@@ -1,5 +1,4 @@
 import { betterAuth } from "better-auth";
-import Database from "better-sqlite3";
 import {LibsqlDialect} from "@libsql/kysely-libsql";
 
 const dialect = new LibsqlDialect({

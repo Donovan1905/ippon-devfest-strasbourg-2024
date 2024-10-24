@@ -12,7 +12,7 @@ export default function SignUpPage() {
     const [password, setPassword] = useState("");
 
     const signUp = async () => {
-        const { data, error } = await authClient.signUp.email({
+        const { data } = await authClient.signUp.email({
             email,
             password,
             name: displayName,

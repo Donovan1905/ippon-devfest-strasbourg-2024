@@ -12,7 +12,7 @@ export default function LoginPage() {
     const [password, setPassword] = useState("");
 
     const logIn = async () => {
-        const { data, error } = await authClient.signIn.email({
+        const { error } = await authClient.signIn.email({
             email,
             password
         })
